@@ -1,0 +1,11 @@
+1.Thuật toán Johnson
+Bài toán 1:
+'Mỗi một chi tiết D1,D2,...Dn cần phải được lần lượt gia công trên 2 máy A,B. Thời gian gia công chi tiết Di trên máy A là ai trên máy B là bi (i=1,2..n). 
+Hãy tìm lịch (trình tự gia công) các chi tiết trên hai máy sao cho việc hoàn thành gia công tất cả các chi tiết là sớm nhất'.
+
+Thuật Johnson:
+Chia các chi tiết thành 2 nhóm: nhóm N1, gồm các chi tiết Di thoả mãn a1 < b1, tức là min(ai,bi) = ai và nhóm N2 gồm các chi tiết Di thoả mãn ai >bi tức là min(ai,bi)=bi. Các chi tiết Di thoả mãn ai =bi xếp vào nhóm nào cũng được.
+Sắp xếp các chi tiết trong N1 theo chiều tăng của các ai và sắp xếp các chi tiết trong N2 theo chiều giảm của các bi
+Nối N2 vào đuôi N1, dãy thu được (đọc từ trái sang phải) sẽ là lịch gia công.
+
+https://vnoi.info/forum/5/5062/- nguồn.
