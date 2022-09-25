@@ -1,0 +1,13 @@
+if positive : counting vector :
+{
+   a[i] = a[i] % x;
+   a[i] = (a[i-1] + a[i]) % x;
+   res = res + mp[a[i]];
+   mp[a[i]]++;
+}
+if positive && nega : counting vector :
+{
+    a[i] = a[i-1] + a[i];
+    res = res + mp[(a[i] % n + n) % n];
+    mp[(a[i] % n + n) % n]++;
+}
